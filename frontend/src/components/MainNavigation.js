@@ -1,18 +1,18 @@
 import { NavLink } from 'react-router-dom';
 
-import classes from './MainNavigation.module.css';
+import styles from './MainNavigation.module.css';
 import NewsletterSignup from './NewsletterSignup';
 
 function MainNavigation() {
   return (
-    <header className={classes.header}>
+    <header className={styles.header}>
       <nav>
-        <ul className={classes.list}>
+        <ul className={styles.list}>
           <li>
             <NavLink
-              to="/"
+              to='/'
               className={({ isActive }) =>
-                isActive ? classes.active : undefined
+                isActive ? styles.active : undefined
               }
               end
             >
@@ -21,9 +21,9 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/events"
+              to='/events'
               className={({ isActive }) =>
-                isActive ? classes.active : undefined
+                isActive ? styles.active : undefined
               }
             >
               Events
@@ -31,12 +31,22 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/newsletter"
+              to='/newsletter'
               className={({ isActive }) =>
-                isActive ? classes.active : undefined
+                isActive ? styles.active : undefined
               }
             >
               Newsletter
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/auth?mode=login'
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+            >
+              Authentication
             </NavLink>
           </li>
         </ul>
