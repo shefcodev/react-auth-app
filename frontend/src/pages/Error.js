@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import { useRouteError } from 'react-router-dom';
 import MainNavigation from '../components/MainNavigation';
 
@@ -18,13 +20,17 @@ function ErrorPage() {
     message = 'Could not find resource or page.';
   }
 
+  if (error.status === 422) {
+    message = error.data.message;
+  }
+
   return (
-    <>
+    <Fragment>
       <MainNavigation />
       <PageContent title={title}>
         <p>{message}</p>
       </PageContent>
-    </>
+    </Fragment>
   );
 }
 

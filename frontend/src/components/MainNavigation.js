@@ -1,9 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useSubmit, useRouteLoaderData } from 'react-router-dom';
 
 import styles from './MainNavigation.module.css';
 import NewsletterSignup from './NewsletterSignup';
 
 function MainNavigation() {
+  const submit = useSubmit();
+  const token = useRouteLoaderData('root');
+
+  const logoutHandler = () => {
+    submit(null, { action: '/logout', method: 'post' });
+  };
+
   return (
     <header className={styles.header}>
       <nav>
@@ -39,16 +46,23 @@ function MainNavigation() {
               Newsletter
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to='/auth?mode=login'
-              className={({ isActive }) =>
-                isActive ? styles.active : undefined
-              }
-            >
-              Authentication
-            </NavLink>
-          </li>
+          {!token && (
+            <li>
+              <NavLink
+                to='/auth?mode=login'
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+              >
+                Authentication
+              </NavLink>
+            </li>
+          )}
+          {token && (
+            <li>
+              <button onClick={logoutHandler}>Logout</button>
+            </li>
+          )}
         </ul>
       </nav>
       <NewsletterSignup />
