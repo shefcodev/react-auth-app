@@ -1,12 +1,52 @@
 {
   "events": [
     {
-      "title": "A new event",
+      "title": "Chicago Developer Conf.",
+      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
+      "date": "2023-12-20",
+      "description": "Chicago Developer Conf and Festival.",
+      "id": "f1af1ab5-712b-47f7-b7ab-7bd7dbe04320"
+    },
+    {
+      "title": "Lagos Dev Fest",
+      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
+      "date": "2023-12-22",
+      "description": "Lagos Developer Fest, NG.",
+      "id": "83e4ea64-7c0a-4a90-90be-55f4cfca39f4"
+    },
+    {
+      "title": "New Year Event",
       "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
       "date": "2022-10-01",
       "description": "Some awesome event!",
       "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "shefco@test.com",
+      "password": "$2a$12$L7Ww/IuoHMy04bJXpeIRauZrhN9hOEsSmc1H6kBrXG5g1ugBaNFNC",
+      "id": "98746774-c906-4f9a-ad12-7f73733802d9"
+    },
+    {
+      "email": "moe@test.com",
+      "password": "$2a$12$IbTmohzwQVacDlypdhyTgeJ0Ha0qgR4SRZ84pIiPUhtNNU6Bd6WHi",
+      "id": "e2fc5047-e50e-4c82-90cd-a94ea9430c09"
+    },
+    {
+      "email": "mido@test.com",
+      "password": "$2a$12$GelKLMulXET/jYWM33S7ueaO.LDnrn6mu2h7bVlaqPaCujVwn40Bm",
+      "id": "8bd60e7b-1d87-4911-91fa-09045f154757"
+    },
+    {
+      "email": "jack@test.com",
+      "password": "$2a$12$hijhPAXZgvYysTU4k.z.EekG4Qffuq1UpubXeBmTnRiQrVyM42MsW",
+      "id": "7ca7291e-408c-4af6-a2ef-1cf4ca5a4d96"
+    },
+    {
+      "email": "reeve@test.com",
+      "password": "$2a$12$80YILzSm7kdrf/2wPD3cNuiZjFcIam2Ikz3mZOFkMC78otIREcEKC",
+      "id": "87296722-9813-4c25-9053-330391a74e64"
+    }
+  ]
 }
